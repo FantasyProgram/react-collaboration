@@ -1,5 +1,5 @@
 import React,{Component}from 'react';
-
+import InputField from './InputField.jsx';
 
 export default class App extends Component{
 
@@ -14,7 +14,11 @@ export default class App extends Component{
     render(){
         const {message} = this.state;
         return(
-            <h1>{message}</h1>
+            <>
+              <h1>{message}</h1>
+              <InputField/>
+            </>
+          
         );
     }
 }
