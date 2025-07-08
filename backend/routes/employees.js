@@ -9,7 +9,6 @@ class Employee {
         this.gender = gender;
         this.email = email;
     }
-
 }
 
 const employeeRouter = Router();

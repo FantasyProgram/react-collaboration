@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { LazyCard } from './LazyLoading.js';
+import { LazyCard,RegistrationForm } from './LazyLoading.js';
 
 
 export default function InputField() {
@@ -41,7 +41,7 @@ export default function InputField() {
 
         <div>
           {cards.map((id) => (
-            <LazyCard key={id} />
+            <RegistrationForm key={id} />
           ))}
         </div>
       </div>

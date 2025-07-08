@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import path from 'path';
 import { fileURLToPath } from 'url';
+import  cors from 'cors'
 
 import employeeRouter from './routes/employees.js';
 
@@ -17,6 +18,13 @@ const PORT = process.env.PORT;
 server.use(express.static(path.join(__dirname,'dist')))
 server.use(express.static(path.join(__dirname, 'public'))); 
 server.use(express.json());
+
+
+const corsConfig = {
+  origin:'http://localhost:6969'
+};
+
+server.use(cors(corsConfig));
   
 const loggerMiddleware = (req,res,next)=>{
       console.log(req.url)
@@ -33,5 +41,5 @@ server.use("/employee",employeeRouter);
 
 
 server.listen(PORT ,()=>{
-    console.log(`Server started at http:localhost:${PORT}`);
+    console.log(`Server started at http://localhost:${PORT}`);
 })

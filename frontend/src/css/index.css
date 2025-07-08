@@ -1,0 +1,17 @@
+.navigation-bar-container
+{
+    position:absolute;
+    display:flex;
+    flex-direction: row;
+    width:100vw;
+    height:200px;
+    border-bottom-width:1px;
+    border-bottom-color:lightblue;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigation-bar-container > a{
+    border-radius: 1px solid black;
+}

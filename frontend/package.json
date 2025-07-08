@@ -6,14 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "webpack serve --mode development",
-    "build":"webpack --mode production --progress --stats verbose"
-
+    "build": "webpack --mode production --progress --stats verbose"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FantasyProgram/react-collaboration.git"
   },
   "keywords": [],
+  "proxy": "http://localhost:8080",
   "author": "",
   "license": "ISC",
   "type": "module",
@@ -28,6 +28,7 @@
     "primereact": "^10.9.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
