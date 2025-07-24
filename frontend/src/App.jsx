@@ -10,6 +10,7 @@ import 'primeicons/primeicons.css';
 
 import Home from './pages/Home.jsx';
 import Browse from './pages/Browse.jsx'
+import ProductPage from './pages/ProductPage.jsx'
 
 export default class App extends Component {
     constructor(props) {
@@ -27,8 +28,8 @@ export default class App extends Component {
                     <Routes>
                         <Route path="/" element={<Browse />} />
                         <Route path="/home" element={<Home />} />
+                        <Route path="/products" element={<ProductPage />} />
                     </Routes>
-
                 </BrowserRouter>
             </PrimeReactProvider>
         );

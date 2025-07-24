@@ -21,7 +21,7 @@ export default function PButton(){
     const [employees,setEmployees] = useState([]);
    
     useEffect(()=>{
-        fetch("http://localhost:8080/employee")
+        fetch("http://localhost:8080")
         .then(res => res.json())
         .then((data)=> {
             if(data!==null){

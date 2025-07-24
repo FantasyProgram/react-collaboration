@@ -17,7 +17,7 @@ export default {
     },
      devServer: {
         static: './dist',
-        port: 6969,
+        port: 9999,
         open:true,
         hot:true,
     },

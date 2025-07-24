@@ -10,6 +10,7 @@ export default function Browse() {
     return (
         <>
             <Link to="/home">Home</Link>
+            <Link to="/products">Products</Link>
             <PButton />
             <InputField />
         
