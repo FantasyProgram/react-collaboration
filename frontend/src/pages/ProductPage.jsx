@@ -48,7 +48,7 @@ const ProductFormDialog = ({visibility,currentProduct,handlers})=>{
                     value={currentProduct.name}
                     onChange={onNameChange}
                   />
-                  <label for="name" value ="Product Name"/>
+                  <label htmlFor="name">Product Name"</label>
                 </FloatLabel>
 
                 <FloatLabel>
@@ -59,7 +59,7 @@ const ProductFormDialog = ({visibility,currentProduct,handlers})=>{
                     value={currentProduct.price}
                     onChange={onPriceChange}
                   />
-                  <label for="price" value ="Price"/>
+                  <label htmlFor="price">Price</label>
                 </FloatLabel>
             </div>
           </form>

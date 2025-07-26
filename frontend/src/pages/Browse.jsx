@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 
 import PButton from '../components/PButton'
 import InputField from '../components/InputField'
+import Test from './../Test'
 
 export default function Browse() {
 
@@ -13,6 +14,7 @@ export default function Browse() {
             <Link to="/products">Products</Link>
             <PButton />
             <InputField />
+            <Test name="Jane Doe" age={69}/>
         
         </>
     )
